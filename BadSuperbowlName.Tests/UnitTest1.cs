@@ -4,11 +4,11 @@ using Xunit;
 namespace BadSuperbowlName.Tests
 {
   // Test classes must be public
-  public class UnitTest1
+  public class NumberToRomanNumeralTests
   {
     // Need to have a [Fact] attribute, and needs to be public
     [Fact]
-    public void Test1()
+    public void the_number_1_is_translated_into_the_letter_I()
     {
       // Arrange -> context that the test is run inside of
       var numberToTranslate = 1;
@@ -20,9 +20,14 @@ namespace BadSuperbowlName.Tests
 
       // Assert -> lay out the expectations in such a way that, if not met,
       // exceptions are thrown.
+      //if (actualResult != expectedResult)
+      //{
+      //  throw new Exception($"This is wrong. {actualResult} is not equal to {expectedResult}");
+      //}
 
-
+      // Assert.True(); statement
       Assert.True(actualResult == expectedResult);
+
       // Same result different Assert command with more detail
       // Assert.Equal(expectedResult, actualResult);
 
@@ -33,6 +38,7 @@ namespace BadSuperbowlName.Tests
       // throw new Exception("Throwing an exception makes tests fail");
 
     }
+
     [Fact]
     public void the_number_3_should_be_translated_toII()
     {
