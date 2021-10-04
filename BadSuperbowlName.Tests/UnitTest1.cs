@@ -4,11 +4,11 @@ using Xunit;
 namespace BadSuperbowlName.Tests
 {
   // Test classes must be public
-  public class UnitTest1
+  public class NumberToRomanNumeralTests
   {
     // Need to have a [Fact] attribute, and needs to be public
     [Fact]
-    public void Test1()
+    public void the_number_1_is_translated_into_the_letter_I()
     {
       // Arrange -> context that the test is run inside of
       var numberToTranslate = 1;
