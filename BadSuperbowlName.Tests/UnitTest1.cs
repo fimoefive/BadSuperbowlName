@@ -20,9 +20,14 @@ namespace BadSuperbowlName.Tests
 
       // Assert -> lay out the expectations in such a way that, if not met,
       // exceptions are thrown.
+      //if (actualResult != expectedResult)
+      //{
+      //  throw new Exception($"This is wrong. {actualResult} is not equal to {expectedResult}");
+      //}
 
-
+      // Assert.True(); statement
       Assert.True(actualResult == expectedResult);
+
       // Same result different Assert command with more detail
       // Assert.Equal(expectedResult, actualResult);
 
@@ -33,6 +38,7 @@ namespace BadSuperbowlName.Tests
       // throw new Exception("Throwing an exception makes tests fail");
 
     }
+
     [Fact]
     public void the_number_3_should_be_translated_toII()
     {
